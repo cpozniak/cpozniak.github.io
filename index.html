@@ -21,7 +21,7 @@
             text-align: left;
             padding-left: 30px;
         }
-        .main-container {
+        .main-content {
             display: flex;
             flex: 1;
         }
@@ -29,19 +29,8 @@
             width: 220px;
             background: #FCF434;
             padding: 10px;
-            position: fixed;
             height: calc(100vh - 56px);
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 10px 0;
-        }
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
+            position: fixed;
         }
         section {
             margin-left: 240px;
@@ -69,8 +58,10 @@
             padding: 15px;
             border-top: 3px solid #8B6AA8;
             font-size: 14px;
-            margin-left: 220px; /* Même marge que le contenu principal */
-            width: calc(100% - 220px); /* Largeur ajustée pour ne pas chevaucher la barre latérale */
+            margin-left: 220px;
+            width: calc(100% - 220px);
+            position: relative;
+            clear: both;
         }
         footer a {
             color: #8B6AA8;
@@ -85,7 +76,7 @@
    <header>
         <h1>Céline Pozniak</h1>
     </header>
-    <div class="main-container">
+    <div class="main-content">
         <nav>
             <div class="photo">
                 <img src="profil.png" alt="Céline Pozniak">
