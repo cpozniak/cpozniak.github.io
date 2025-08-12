@@ -10,39 +10,70 @@
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+        }
+        header {
+            background: #8B6AA8; /* Violet background */
+            color: #fff;
+            padding: 20px;
+            text-align: center;
         }
         nav {
-            background: #333;
-            color: #fff;
+            width: 200px;
+            background: #f4f4f4;
             padding: 10px;
+            height: 100vh;
+            position: fixed;
         }
         nav ul {
             list-style: none;
             padding: 0;
         }
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 10px 0;
         }
         nav ul li a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
         }
         section {
+            margin-left: 220px;
             padding: 20px;
+        }
+        .photo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .photo img {
+            width: 100px;
+            height: auto;
+            border-radius: 50%;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
         }
     </style>
 </head>
 <body>
+    <header>
+        <h1>Céline Pozniak</h1>
+    </header>
     <nav>
+        <div class="photo">
+            <img src="profil.jpg" alt="Céline Pozniak">
+        </div>
         <ul>
             <li><a href="index.html">Main Page</a></li>
             <li><a href="research.html">Research</a></li>
         </ul>
+        <div class="contact">
+            <p>Get in touch</p>
+            <p>Please do feel free to contact me at <a href="mailto:celine.pozniak@univ-paris8.fr">celine.pozniak@univ-paris8.fr</a></p>
+        </div>
     </nav>
-
     <section>
-        <h1>Welcome to My CV</h1>
+        <h2>Welcome to My CV</h2>
         <p>This is the main page. Here you can introduce yourself and provide a brief overview of your professional background.</p>
     </section>
 </body>
