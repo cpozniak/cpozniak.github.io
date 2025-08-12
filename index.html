@@ -11,18 +11,23 @@
             padding: 0;
             line-height: 1.6;
             display: flex;
+            flex-direction: column;
         }
         header {
-            background: #8B6AA8; /* Violet background */
+            background: #8B6AA8;
             color: #fff;
-            padding: 20px;
-            text-align: center;
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .container {
+            display: flex;
         }
         nav {
-            width: 200px;
+            width: 220px;
             background: #f4f4f4;
             padding: 10px;
-            height: 100vh;
+            min-height: calc(100vh - 56px);
             position: fixed;
         }
         nav ul {
@@ -37,21 +42,24 @@
             text-decoration: none;
         }
         section {
-            margin-left: 220px;
+            margin-left: 240px;
             padding: 20px;
+            flex: 1;
         }
         .photo {
             text-align: center;
-            margin-bottom: 20px;
+            margin: 10px 0;
         }
         .photo img {
-            width: 100px;
-            height: auto;
+            width: 150px;
+            height: 150px;
             border-radius: 50%;
+            object-fit: cover;
         }
         .contact {
             margin-top: 20px;
             text-align: center;
+            font-size: 14px;
         }
     </style>
 </head>
@@ -59,22 +67,24 @@
     <header>
         <h1>Céline Pozniak</h1>
     </header>
-    <nav>
-        <div class="photo">
-            <img src="profil.png" alt="Céline Pozniak">
-        </div>
-        <ul>
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="research.html">Research</a></li>
-        </ul>
-        <div class="contact">
-            <p>Get in touch</p>
-            <p>Please do feel free to contact me at <a href="mailto:celine.pozniak@univ-paris8.fr">celine.pozniak@univ-paris8.fr</a></p>
-        </div>
-    </nav>
-    <section>
-        <h2>Welcome to My CV</h2>
-        <p>This is the main page. Here you can introduce yourself and provide a brief overview of your professional background.</p>
-    </section>
+    <div class="container">
+        <nav>
+            <div class="photo">
+                <img src="your-photo.jpg" alt="Céline Pozniak">
+            </div>
+            <ul>
+                <li><a href="index.html">Main Page</a></li>
+                <li><a href="research.html">Research</a></li>
+            </ul>
+            <div class="contact">
+                <p><b>Get in touch</b></p>
+                <p>Please do feel free to contact me at<br><a href="mailto:celine.pozniak@univ-paris8.fr">celine.pozniak@univ-paris8.fr</a></p>
+            </div>
+        </nav>
+        <section>
+            <h2>Welcome to My CV</h2>
+            <p>This is the main page. Here you can introduce yourself and provide a brief overview of your professional background.</p>
+        </section>
+    </div>
 </body>
 </html>
