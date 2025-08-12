@@ -37,6 +37,10 @@
             padding: 20px;
             flex: 1;
         }
+        .content-wrapper {
+            max-width: 800px; /* Limite la largeur du texte */
+            margin: 0 auto; /* Centre le contenu */
+        }
         .photo {
             text-align: center;
             margin: 10px 0;
@@ -65,6 +69,7 @@
         .footer-content {
             margin-left: 240px;
             padding-right: 20px;
+            max-width: 800px; /* Même largeur max que le contenu */
         }
         footer a {
             color: #8B6AA8;
@@ -93,8 +98,10 @@
             </div>
         </nav>
         <section>
-            <h2>Current Situation</h2>
-            <p>Since September 2020, I have been working as an associate professor at Paris 8 university and I have been attached to the Structures Formelles du Langage lab. As a psycholinguist specializing in experimental syntax, my current research focuses on sociolinguistic variation, primarily in French and concerning social gender. More specifically, I work on modeling social properties in linguistic processing.</p>
+            <div class="content-wrapper">
+                <h2>Current Situation</h2>
+                <p>Since September 2020, I have been working as an associate professor at Paris 8 university and I have been attached to the Structures Formelles du Langage lab. As a psycholinguist specializing in experimental syntax, my current research focuses on sociolinguistic variation, primarily in French and concerning social gender. More specifically, I work on modeling social properties in linguistic processing.</p>
+            </div>
         </section>
     </div>
     <footer>
