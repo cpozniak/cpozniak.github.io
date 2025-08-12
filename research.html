@@ -3,46 +3,86 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research</title>
+    <title>Céline Pozniak</title>
     <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
             line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+        }
+        header {
+            background: #9C59D1;
+            color: #fff;
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .container {
+            display: flex;
         }
         nav {
-            background: #333;
-            color: #fff;
+            width: 220px;
+            background: #FCF434;
             padding: 10px;
+            min-height: calc(100vh - 56px);
+            position: fixed;
         }
         nav ul {
             list-style: none;
             padding: 0;
         }
         nav ul li {
-            display: inline;
-            margin-right: 10px;
+            margin: 10px 0;
         }
         nav ul li a {
-            color: #fff;
+            color: #333;
             text-decoration: none;
         }
         section {
+            margin-left: 240px;
             padding: 20px;
+            flex: 1;
+        }
+        .photo {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
         }
     </style>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">Main Page</a></li>
-            <li><a href="research.html">Research</a></li>
-        </ul>
-    </nav>
-
+   <header>
+        <h1>Céline Pozniak</h1>
+    </header>
+    <div class="container">
+        <nav>
+            <div class="photo">
+                <img src="profil.png" alt="Céline Pozniak">
+            </div>
+            <ul>
+                <li><a href="index.html"><b>Main Page</b></a></li>
+                <li><a href="research.html"><b>Research</b></a></li>
+            </ul>
+            <div class="contact">
+                <p><b>Get in touch</b> <br> Please feel free to contact me at<br><a href="mailto:celine.pozniak@univ-paris8.fr">celine.pozniak@univ-paris8.fr</a></p>
+            </div>
+        </nav>
+      
     <section>
-        <h1>Research</h1>
+        <h2>Research</h2>
         <p>This is the research page. Here you can detail your research interests, projects, and publications.</p>
     </section>
 </body>
