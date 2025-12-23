@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Céline Pozniak</title>
-    <style>
+  <style>
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,39 +12,37 @@
             line-height: 1.6;
             display: flex;
             flex-direction: column;
+            min-height: 100vh;
+             background: #F8F8F8;
+            
+            
         }
         header {
-            background: #9C59D1;
+            background: #D4B5E8;
             color: #fff;
             padding: 15px;
             text-align: left;
             padding-left: 30px;
         }
-        .container {
+        .main-content {
             display: flex;
+            flex: 1;
         }
         nav {
             width: 220px;
-            background: #FCF434;
+            background: #FFF5C3;
             padding: 10px;
-            min-height: calc(100vh - 56px);
+            height: calc(100vh - 56px);
             position: fixed;
-        }
-        nav ul {
-            list-style: none;
-            padding: 0;
-        }
-        nav ul li {
-            margin: 10px 0;
-        }
-        nav ul li a {
-            color: #333;
-            text-decoration: none;
         }
         section {
             margin-left: 240px;
             padding: 20px;
             flex: 1;
+        }
+        .content-wrapper {
+            max-width: 700px; /* Largeur limitée pour le texte */
+            margin: 0; /* Pas de marge auto pour éviter l'espace trop large */
         }
         .photo {
             text-align: center;
@@ -60,6 +58,27 @@
             margin-top: 20px;
             text-align: center;
             font-size: 14px;
+        }
+        footer {
+            background: #3D3D3D;
+            color: #fff;
+            padding: 15px;
+            font-size: 14px;
+            width: 100%;
+            margin-left: 0;
+            position: relative;
+        }
+        .footer-content {
+            margin-left: 240px;
+            padding-right: 20px;
+            max-width: 700px; /* Même largeur que le contenu */
+        }
+        footer a {
+            color: #8B6AA8;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
         }
     </style>
 </head>
