@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Céline Pozniak</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+             background: #F8F8F8;
+            
+            
+        }
+        header {
+            background: #D4B5E8;
+            color: #fff;
+            padding: 15px;
+            text-align: left;
+            padding-left: 30px;
+        }
+        .main-content {
+            display: flex;
+            flex: 1;
+        }
+        nav {
+            width: 220px;
+            background: #FFF5C3;
+            padding: 10px;
+            height: calc(100vh - 56px);
+            position: fixed;
+        }
+        section {
+            margin-left: 240px;
+            padding: 20px;
+            flex: 1;
+        }
+        .content-wrapper {
+            max-width: 700px; /* Largeur limitée pour le texte */
+            margin: 0 auto; /* Pas de marge auto pour éviter l'espace trop large */
+              text-align: justify; /* Justifie le texte */
+        }
+        .photo {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .photo img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
+        .contact {
+            margin-top: 20px;
+            text-align: center;
+            font-size: 14px;
+        }
+        footer {
+            background: #3D3D3D;
+            color: #fff;
+            padding: 15px;
+            font-size: 14px;
+            width: 100%;
+            margin-left: 0;
+            position: relative;
+        }
+        .footer-content {
+            margin-left: 240px;
+            padding-right: 20px;
+            max-width: 700px; /* Même largeur que le contenu */
+        }
+        footer a {
+            color: #8B6AA8;
+            text-decoration: none;
+        }
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+   <header>
+        <h1>Céline Pozniak</h1>
+    </header>
+    <div class="main-content">
+        <nav>
+            <div class="photo">
+                <img src="profil.png" alt="Céline Pozniak">
+            </div>
+            <ul>
+                <li><a href="index.html"><b>About me</b></a></li>
+                <li><a href="research.html"><b>Research Activities</b></a></li>
+                <li><a href="Projects.html"><b>SoPHIa Project</b></a></li>
+            </ul>
+            <div class="contact">
+                <p><b>Get in touch</b> <br> Please feel free to contact me at<br><a href="mailto:celine.pozniak@univ-paris8.fr">celine.pozniak[a]univ-paris8.fr</a></p>
+            </div>
+        </nav>
+        <section>
+            <div class="content-wrapper">
+                <h2>SOPHIA </h2>
+                <p>BLA</p>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <div class="footer-content">
+            <p style="margin: 5px 0;"> 2026 Céline Pozniak | <a href="mailto:celine.pozniak@univ-paris8.fr">Contact</a> | <a href="https://orcid.org/0000-0002-9664-1659">ORCID</a> | <a href="https://osf.io/wxh57/">OSF</a></p>
+        </div>
+    </footer>
+</body>
+</html>
