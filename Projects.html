@@ -94,6 +94,19 @@
     li a:hover {
         text-decoration: underline; /* Souligne au survol (optionnel) */
     }
+.flex-container {
+    display: flex; /* Active Flexbox */
+    align-items: flex-start; /* Aligne les éléments en haut */
+    gap: 15px; /* Espace entre l'image et le texte */
+}
+.flex-image {
+    width: 200px; /* Ajuste la largeur selon tes besoins */
+}
+.flex-text {
+    flex: 1; /* Le texte prend l'espace restant */
+}
+
+        
     </style>
 </head>
 <body>
@@ -116,7 +129,11 @@
         </nav>
         <section>
             <div class="content-wrapper">
-                <h2>Social Persona and Human Interaction </h2>
+                <h2>Social Persona and Human Interaction </h2> 
+ <div class="flex-container">
+        <img src="ton-image.png" alt="Description" class="flex-image">
+        <div class="flex-text">
+                
                 <p> This project is funded by the Agence Nationale de Recherche (n° ANR-25-CE28-0525). </p>
                 
                 <p>The SoPHIa project aims to refine psycholinguistic models by integrating the social factor into language processing. Current models, such as the noisy channel models, focus primarily on linguistic aspects, neglecting the social meaning of linguistic expressions. 
@@ -127,6 +144,8 @@
                     The outcomes will contribute to a more fine-grained psycholinguistic model, clarifying the influence(s) of social persona on language processing. 
                     Additionally, the project will raise societal awareness about the connections between linguistic features and social persona, with pedagogical applications in university methodology courses.</p>
             </div>
+        </div>
+                   </div>
         </section>
     </div>
     <footer>
