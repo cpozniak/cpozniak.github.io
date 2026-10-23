@@ -1,0 +1,440 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Céline Pozniak</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,600;8..60,700&family=Source+Sans+3:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap">
+<style>
+/* Layout: Google-Sites-like — top bar (name + tabs), soft lavender banner with the page title, one centred column per page */
+:root{
+  --bg:#faf8fd; --surface:#ffffff; --ink:#2b2438; --muted:#6c6379; --rule:#e6e0ef;
+  --lilac:#ddd0f2; --lilac-2:#efe8fa; --violet:#6f4fa0; --lemon:#f7f0c6;
+  --display:"Source Serif 4", Georgia, serif;
+  --sans:"Source Sans 3", "Helvetica Neue", Arial, sans-serif;
+}
+@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
+  --bg:#17141d; --surface:#201b28; --ink:#ece7f3; --muted:#a79fb4; --rule:#332b3f;
+  --lilac:#3d3150; --lilac-2:#2a2236; --violet:#c8b0ef; --lemon:#5a5330; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#17141d; --surface:#201b28; --ink:#ece7f3; --muted:#a79fb4; --rule:#332b3f;
+  --lilac:#3d3150; --lilac-2:#2a2236; --violet:#c8b0ef; --lemon:#5a5330; color-scheme:dark}
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--sans);font-size:17.5px;line-height:1.65}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+body.en [data-l="fr"]{display:none!important}
+body:not(.en) [data-l="en"]{display:none!important}
+a{color:var(--violet);text-decoration-thickness:1px;text-underline-offset:3px}
+a:focus-visible,button:focus-visible{outline:2px solid var(--violet);outline-offset:2px;border-radius:3px}
+.gut{padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* top bar */
+.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--surface);border-bottom:1px solid var(--rule)}
+.bar-in{max-width:1100px;margin:0 auto;display:flex;align-items:center;gap:24px;padding-block:12px;flex-wrap:wrap}
+.brand{font-family:var(--display);font-weight:600;font-size:1.35rem;color:var(--ink);text-decoration:none;line-height:1;white-space:nowrap}
+.tabs{display:flex;gap:4px;margin-left:auto;overflow-x:auto;scrollbar-width:none;min-width:0}
+.tabs a{font-size:14.5px;color:var(--muted);text-decoration:none;padding:6px 12px;border-radius:999px;white-space:nowrap}
+.tabs a:hover{color:var(--ink);background:var(--lilac-2)}
+.tabs a[aria-current="page"]{color:var(--ink);background:var(--lilac);font-weight:500}
+.lang{display:flex;border:1px solid var(--rule);border-radius:999px;overflow:hidden;font-size:12.5px}
+.lang button{font:inherit;background:none;border:0;color:var(--muted);padding:4px 10px;cursor:pointer}
+.lang button[aria-pressed="true"]{background:var(--violet);color:var(--surface)}
+
+/* banner */
+.banner{background:
+  radial-gradient(120% 140% at 0% 0%, var(--lemon) 0%, transparent 38%),
+  linear-gradient(120deg, var(--lilac-2) 0%, var(--lilac) 100%)}
+.banner-in{max-width:880px;margin:0 auto;padding-block:56px 48px}
+.banner h1{font-family:var(--display);font-weight:600;font-size:clamp(2rem,5vw,2.8rem);line-height:1.05;margin:0;text-wrap:balance}
+.banner p{margin:10px 0 0;color:var(--muted);font-size:1.05rem;max-width:60ch}
+
+main{max-width:880px;margin:0 auto;padding-block:48px 72px}
+.view{display:flex;flex-direction:column;gap:40px}
+section{display:flex;flex-direction:column;gap:14px}
+h2{font-family:var(--display);font-weight:600;font-size:1.55rem;line-height:1.15;margin:0;text-wrap:balance}
+h3{font-size:1rem;margin:10px 0 0;font-weight:700;letter-spacing:.02em}
+p{margin:0;max-width:68ch}
+.note{font-size:15px;color:var(--muted)}
+
+/* home */
+.intro{display:grid;grid-template-columns:200px minmax(0,1fr);gap:36px;align-items:start}
+.photo{width:200px;max-width:100%;aspect-ratio:1;border-radius:50%;object-fit:cover;border:6px solid var(--lilac);display:block}
+.intro-text{display:flex;flex-direction:column;gap:14px;min-width:0}
+.intro-text .role{font-weight:700}
+.card{border-top:1px solid var(--rule);padding-top:24px;display:flex;flex-direction:column;gap:8px}
+.links{display:flex;flex-wrap:wrap;gap:6px 22px}
+.links a{font-size:16px}
+.mail{display:flex;flex-wrap:wrap;align-items:center;gap:10px}
+.copy{font:inherit;font-size:13px;background:none;border:1px solid var(--rule);color:var(--muted);border-radius:4px;padding:1px 8px;cursor:pointer}
+
+/* research */
+.axes{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.axis{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:6px;font-size:15.5px}
+.axis strong{color:var(--violet);font-weight:700}
+.proj-head{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.anr{height:40px;width:auto;background:#fff;border-radius:6px;padding:5px 8px;flex:none}
+.facts{display:flex;flex-wrap:wrap;gap:8px}
+.facts span{font-size:13.5px;background:var(--lilac-2);border-radius:999px;padding:3px 12px}
+
+/* match / mismatch demo */
+.demo{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.trial{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:18px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.trial-head{display:flex;align-items:center;gap:14px}
+.trial-head svg{width:76px;height:76px;flex:none}
+.trial-head div{display:flex;flex-direction:column;gap:4px;font-size:14.5px;min-width:0}
+.chip{align-self:flex-start;font-size:12px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;border-radius:999px;padding:2px 10px;background:var(--lilac-2);color:var(--violet)}
+.chip.mis{background:var(--lemon);color:var(--ink)}
+.step{font-size:12.5px;color:var(--muted)}
+.read{overflow-x:auto;border-top:1px dashed var(--rule);padding-top:6px}
+.sentence{font-size:1.15rem;line-height:2.8;white-space:nowrap}
+.w{position:relative;display:inline-block}
+.fx{position:absolute;top:50%;width:var(--s);height:var(--s);margin:calc(var(--s)/-2) 0 0 calc(var(--s)/-2);border-radius:50%;
+  background:color-mix(in srgb, var(--violet) 18%, transparent);border:1.5px solid var(--violet);pointer-events:none}
+.fx b{position:absolute;top:-1.6em;left:50%;transform:translateX(-50%);font-size:11px;font-weight:700;color:var(--violet)}
+.fx.reg{border-style:dashed}
+.caption{font-size:13.5px;color:var(--muted)}
+
+/* lists */
+.entries{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:12px}
+.entries li{display:grid;grid-template-columns:92px minmax(0,1fr);gap:16px;font-size:15.5px}
+.entries .y{color:var(--violet);font-weight:700;font-size:14px;padding-top:2px;font-variant-numeric:tabular-nums}
+.pubs{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:14px}
+.pubs li{font-size:15.5px;display:grid;grid-template-columns:56px minmax(0,1fr);gap:12px}
+.pubs li > .y{color:var(--violet);font-weight:700;font-size:14px;padding-top:2px}
+.me{font-weight:700}
+.pubs a{font-size:13.5px;word-break:break-all}
+.team{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:14px}
+.team div{background:var(--surface);border:1px solid var(--rule);border-radius:14px;padding:16px 18px;font-size:15px}
+.team strong{display:block;font-size:16px}
+
+/* courses */
+.courses{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:16px}
+.courses li{display:flex;flex-direction:column;gap:2px;font-size:15.5px;padding-left:16px;border-left:2px solid var(--lilac)}
+.courses .t{font-weight:700}
+.courses .m{font-size:13.5px;color:var(--violet);font-weight:500}
+
+footer{border-top:1px solid var(--rule)}
+footer .in{max-width:880px;margin:0 auto;padding-block:20px;font-size:13px;color:var(--muted)}
+
+@media (max-width:760px){
+  .bar-in{gap:10px}
+  .tabs{order:3;width:100%;margin-left:0}
+  .lang{margin-left:auto}
+  .banner-in{padding-block:36px 32px}
+  .intro{grid-template-columns:minmax(0,1fr);gap:20px}
+  .photo{width:150px}
+  .axes,.demo{grid-template-columns:minmax(0,1fr)}
+  .entries li,.pubs li{grid-template-columns:minmax(0,1fr);gap:0}
+}
+</style>
+
+<header class="bar"><div class="bar-in gut">
+  <a class="brand" href="#home">Céline Pozniak</a>
+  <nav class="tabs" aria-label="Pages">
+    <a href="#home" data-v="home"><span data-l="en">Home</span><span data-l="fr">Accueil</span></a>
+    <a href="#research" data-v="research"><span data-l="en">Research</span><span data-l="fr">Recherche</span></a>
+    <a href="#publications" data-v="publications">Publications</a>
+    <a href="#talks" data-v="talks"><span data-l="en">Talks</span><span data-l="fr">Communications</span></a>
+    <a href="#teaching" data-v="teaching"><span data-l="en">Teaching &amp; supervision</span><span data-l="fr">Enseignement &amp; encadrement</span></a>
+    <a href="#cv" data-v="cv"><span data-l="en">CV</span><span data-l="fr">Parcours</span></a>
+  </nav>
+  <div class="lang" role="group" aria-label="Language / Langue">
+    <button id="lang-en" aria-pressed="true">EN</button><button id="lang-fr" aria-pressed="false">FR</button>
+  </div>
+</div></header>
+
+<div class="banner" id="banner" hidden><div class="banner-in gut">
+  <h1 id="page-title">Céline Pozniak</h1>
+</div></div>
+
+<main class="gut">
+
+<!-- HOME -->
+<div class="view" id="v-home" data-t-en="Céline Pozniak" data-t-fr="Céline Pozniak"
+  data-s-en="Psycholinguistics and sociolinguistics of French" data-s-fr="Psycholinguistique et sociolinguistique du français">
+  <section class="intro">
+    <img class="photo" alt="Profile picture" src="data:image/jpeg;base64,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">
+    <div class="intro-text">
+      <p class="role"><span data-l="en">Associate Professor in linguistics at Université Paris 8, member of the Structures Formelles du Langage lab (SFL, UMR 7023, CNRS and Paris 8)</span><span data-l="fr">Enseignement et recherche en sciences du langage à l'Université Paris 8 (MCF), membre du laboratoire Structures Formelles du Langage (SFL, UMR 7023, CNRS et Paris 8)</span></p>
+      <p data-l="en">I work at the interface of psycholinguistics and sociolinguistics, mostly on French. I study how social information, such as the image we build of the person speaking or writing, enters sentence processing.</p>
+      <p data-l="fr">Je travaille à l'interface de la psycholinguistique et de la sociolinguistique, surtout sur le français. Je m'intéresse à la façon dont l'information sociale, comme l'image qu'on se fait de la personne qui parle ou qui écrit, entre dans le traitement des phrases.</p>
+      <p data-l="en">I coordinate the ANR project <a href="#research">SoPHIa</a> on the social personae evoked by French variants. At Paris 8, I co-direct the Licence in Language Sciences and teach psycholinguistics, sociolinguistics and experimental methods.</p>
+      <p data-l="fr">Je coordonne le projet ANR <a href="#research">SoPHIa</a> sur les personae sociales associées aux variantes du français. À Paris 8, je suis co-responsable de la Licence Sciences du langage et j'enseigne la psycholinguistique, la sociolinguistique et les méthodes expérimentales.</p>
+    </div>
+  </section>
+  <section class="card">
+    <h3 style="margin:0">Contact</h3>
+    <div class="mail"><span id="eml" data-u="kainzop.enilec" data-d="rf.8sirap-vinu">celine.pozniak [at] univ-paris8 [dot] fr</span><button class="copy" id="copy-mail"><span data-l="en">copy</span><span data-l="fr">copier</span></button></div>
+    <p class="note">SFL, 59-61 rue Pouchet, 75017 Paris</p>
+    <div class="links">
+      <a href="https://orcid.org/0000-0002-9664-1659">ORCID</a>
+      <a href="https://osf.io/wxh57/">OSF</a>
+      <a href="https://www.sfl.cnrs.fr/fr/langage-et-genre">Genre et langage</a>
+    </div>
+  </section>
+</div>
+
+<!-- RESEARCH -->
+<div class="view" id="v-research" hidden data-t-en="Research" data-t-fr="Recherche"
+  data-s-en="Sentence processing, grammatical gender and the social dimensions of language" data-s-fr="Traitement des phrases, genre grammatical et dimensions sociales du langage">
+  <section>
+    <p data-l="en">I study how people process sentences, and how what they know or assume about the speaker or writer shapes this processing. I work within expectation-based models of comprehension, and run experiments with eye-tracking (reading and visual world), self-paced reading, acceptability judgments, and production and perception tasks, analysed with Bayesian mixed-effects models.</p>
+    <p data-l="fr">J'étudie la façon dont on traite les phrases, et comment ce qu'on sait ou suppose de la personne qui parle ou qui écrit influence ce traitement. Je travaille dans le cadre des modèles prédictifs de la compréhension, avec des expériences en oculométrie (lecture et monde visuel), lecture autorythmée, jugements d'acceptabilité, production et perception, analysées avec des modèles mixtes bayésiens.</p>
+    <p data-l="en">My earlier work looked at linguistic and cognitive factors: relative clauses across languages (French, English, Mandarin, Cantonese), pseudo relatives, subject inversion, implicit causality, cross-domain priming from mathematics to syntax, and the role of empathy in prosody. More recently I have focused on social factors: grammatical gender, stereotypes, gender-inclusive writing and the social personae that linguistic variants evoke.</p>
+    <p data-l="fr">Mes premiers travaux portaient sur des facteurs linguistiques et cognitifs : les relatives dans plusieurs langues (français, anglais, mandarin, cantonais), les pseudo-relatives, l'inversion du sujet, la causalité implicite, l'amorçage des mathématiques vers la syntaxe et le rôle de l'empathie dans la prosodie. Je me concentre maintenant sur les facteurs sociaux : genre grammatical, stéréotypes, écriture inclusive et personae sociales associées aux variantes linguistiques.</p>
+    <p class="note"><span data-l="en">Data, materials and analysis scripts:</span><span data-l="fr">Données, matériel et scripts d'analyse :</span> <a href="https://osf.io/wxh57/">osf.io/wxh57</a></p>
+  </section>
+
+  <section>
+    <div class="proj-head"><h2>SoPHIa · Social Persona and Human Interaction</h2><img class="anr" alt="ANR" src="data:image/png;base64,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"></div>
+    <div class="facts"><span>ANR JCJC 2025</span><span>2025–2029</span><span>263 k€</span><span><span data-l="en">PI</span><span data-l="fr">Coordination</span></span></div>
+    <p data-l="en">When we read or hear a variant such as gender-inclusive writing (<i>étudiant·es</i>) or stylistic subject inversion, we infer something about who is writing or speaking. SoPHIa asks whether these social personae, in turn, shape how sentences are processed. The project builds on noisy-channel models of comprehension, in which readers combine the input with their prior expectations to infer what was meant. Here, those expectations include expectations about the speaker. A form that fits the persona should be easy to process, while a form that does not should be more surprising, or more likely to be treated as noise.</p>
+    <p data-l="fr">Quand on lit ou entend une variante comme l'écriture inclusive (<i>étudiant·es</i>) ou l'inversion stylistique du sujet, on en déduit quelque chose sur la personne qui écrit ou qui parle. SoPHIa se demande si ces personae sociales influencent à leur tour le traitement des phrases. Le projet s'appuie sur les modèles de compréhension de type <i>noisy channel</i>, où l'on combine ce qu'on perçoit avec ses attentes pour inférer ce qui a été voulu. Ici, ces attentes portent aussi sur la personne qui parle. Une forme qui correspond à la persona devrait être facile à traiter, alors qu'une forme qui ne lui correspond pas devrait surprendre davantage, voire être traitée comme du bruit.</p>
+    <p data-l="en">The project combines production experiments, norming of persona images and eye-tracking. Team: Célia Richy (postdoctoral researcher) and Yulia Medvedeva (research intern).</p>
+    <p data-l="fr">Le projet combine des expériences de production, une normalisation d'images de personae et de l'oculométrie. Équipe : Célia Richy (chercheuse postdoctorale) et Yulia Medvedeva (stagiaire de recherche).</p>
+  </section>
+</div>
+
+<!-- PUBLICATIONS -->
+<div class="view" id="v-publications" hidden data-t-en="Publications" data-t-fr="Publications"
+  data-s-en="Journal articles, proceedings and other writing" data-s-fr="Articles, actes et autres publications">
+  <section>
+    <h2><span data-l="en">Submitted</span><span data-l="fr">Articles soumis</span></h2>
+    <ol class="pubs">
+      <li><span class="y">2026</span><span><span class="me">Pozniak, C.</span>*, Thiberge, G.*, Richy, C., &amp; Burnett, H. What you say is what you get: A production approach to the social personae of French inclusive writing. <i>Journal of Sociolinguistics</i> (submitted). <span class="note">* equal contribution</span></span></li>
+      <li><span class="y">2026</span><span>Corbeau, E., <span class="me">Pozniak, C.</span>, &amp; Burnett, H. The speech act of advice-giving: A comparative study in French and Japanese on Twitch. <i>Discours</i> (submitted).</span></li>
+    </ol>
+  </section>
+  <section>
+    <h2><span data-l="en">Peer-reviewed journal articles</span><span data-l="fr">Articles dans des revues à comité de lecture</span></h2>
+    <ol class="pubs">
+      <li><span class="y">2025</span><span>Michel, S., <span class="me">Pozniak, C.</span>, &amp; Colonna, S. Reading new morpho-syntactic forms: The case of gender-inclusive writing in French. <i>Journal of French Language Studies</i>, 35, e24. <a href="https://doi.org/10.1017/S0959269525100124">doi:10.1017/S0959269525100124</a></span></li>
+      <li><span class="y">2025</span><span><span class="me">Pozniak, C.</span>, &amp; Hemforth, B. Interference of implicit causality in relative clause processing. <i>Open Mind: Discoveries in Cognitive Science</i>, 9, 364–400. <a href="https://doi.org/10.1162/opmi_a_00193">doi:10.1162/opmi_a_00193</a></span></li>
+      <li><span class="y">2024</span><span><span class="me">Pozniak, C.</span>, Beyssade, C., Roussarie, L., &amp; Godart-Wendling, B. How relevant is the sentence unit to accessing implicit meaning? <i>Languages</i>, 9(2), 42. <a href="https://doi.org/10.3390/languages9020042">doi:10.3390/languages9020042</a></span></li>
+      <li><span class="y">2024</span><span><span class="me">Pozniak, C.</span>, Corbeau, E., &amp; Burnett, H. Contextual dilution in French gender inclusive writing: An experimental investigation. <i>Journal of French Language Studies</i>, 34(2), 273–292. <a href="https://doi.org/10.1017/S0959269523000236">doi:10.1017/S0959269523000236</a></span></li>
+      <li><span class="y">2022</span><span>Cayrecastel, Z., <span class="me">Pozniak, C.</span>, &amp; Colonna, S. Effet d'amorçage sur la féminisation des noms de rôles. Une étude expérimentale chez les enfants francophones de 5 ans. <i>GLAD!</i>, 13. <a href="https://journals.openedition.org/glad/5716">journals.openedition.org/glad/5716</a></span></li>
+      <li><span class="y">2022</span><span>Fukumura, K., <span class="me">Pozniak, C.</span>, &amp; Alario, F.-X. Avoiding gender ambiguous pronouns in French. <i>Cognition</i>, 218, 104909. <a href="https://doi.org/10.1016/j.cognition.2021.104909">doi:10.1016/j.cognition.2021.104909</a></span></li>
+      <li><span class="y">2021</span><span>Burnett, H., &amp; <span class="me">Pozniak, C.</span> Political dimensions of gender inclusive writing in Parisian universities. <i>Journal of Sociolinguistics</i>, 25(5), 808–831. <a href="https://doi.org/10.1111/josl.12489">doi:10.1111/josl.12489</a></span></li>
+      <li><span class="y">2021</span><span><span class="me">Pozniak, C.</span>, &amp; Burnett, H. Failures of Gricean reasoning and the role of stereotypes in the production of gender marking in French. <i>Glossa: A Journal of General Linguistics</i>, 6(1). <a href="https://doi.org/10.5334/gjgl.1310">doi:10.5334/gjgl.1310</a></span></li>
+      <li><span class="y">2020</span><span>Esteve-Gibert, N., Schafer, A. J., Hemforth, B., Portes, C., <span class="me">Pozniak, C.</span>, &amp; D'Imperio, M. Empathy influences how listeners interpret intonation and meaning when words are ambiguous. <i>Memory &amp; Cognition</i>, 48(4), 566–580. <a href="https://doi.org/10.3758/s13421-019-00990-w">doi:10.3758/s13421-019-00990-w</a></span></li>
+      <li><span class="y">2019</span><span><span class="me">Pozniak, C.</span>, Hemforth, B., Haendler, Y., Santi, A., &amp; Grillo, N. Seeing events vs. entities: The processing advantage of pseudo relatives over relative clauses. <i>Journal of Memory and Language</i>, 107, 128–151. <a href="https://doi.org/10.1016/j.jml.2019.04.001">doi:10.1016/j.jml.2019.04.001</a></span></li>
+      <li><span class="y">2018</span><span><span class="me">Pozniak, C.</span>, Hemforth, B., &amp; Scheepers, C. Cross-domain priming from mathematics to relative-clause attachment: A visual-world study in French. <i>Frontiers in Psychology</i>, 9, 2056. <a href="https://doi.org/10.3389/fpsyg.2018.02056">doi:10.3389/fpsyg.2018.02056</a></span></li>
+      <li><span class="y">2016</span><span><span class="me">Pozniak, C.</span>, &amp; Hemforth, B. Acquisition des pronoms objets en français langue seconde. <i>Discours</i>, 18. <a href="https://doi.org/10.4000/discours.9151">doi:10.4000/discours.9151</a></span></li>
+    </ol>
+  </section>
+  <section>
+    <h2><span data-l="en">Chapters and proceedings</span><span data-l="fr">Chapitres et actes</span></h2>
+    <ol class="pubs">
+      <li><span class="y">2026</span><span><span class="me">Pozniak, C.</span>, Turco, G., Hemforth, B., &amp; D'Imperio, M. Using an incremental guessing game to study the role of empathy in prosodic processing. <i>Proceedings of Speech Prosody 2026</i>, Philadelphia. <a href="https://www.isca-archive.org/speechprosody_2026/pozniak26_speechprosody.html">isca-archive.org</a></span></li>
+      <li><span class="y">2022</span><span><span class="me">Pozniak, C.</span>, Copin, M., Turco, G., &amp; Hemforth, B. How specific are linguistic structures? Mathematical priming on relative clause attachment in French. <i>Proceedings of Linguistic Evidence 2022</i>.</span></li>
+      <li><span class="y">2021</span><span><span class="me">Pozniak, C.</span>, Abeillé, A., &amp; Hemforth, B. Subject inversion in French object relatives: What's your preference? In B. Crysmann &amp; M. Sailer (Eds.), <i>One-to-many relations in morphology, syntax, and semantics</i>. Language Science Press. <a href="https://doi.org/10.5281/zenodo.4729802">doi:10.5281/zenodo.4729802</a></span></li>
+    </ol>
+  </section>
+  <section>
+    <h2><span data-l="en">Other</span><span data-l="fr">Autres</span></h2>
+    <ol class="pubs">
+      <li><span class="y">2023</span><span><span data-l="en">Contribution to</span><span data-l="fr">Contribution à</span> Haddad, R. et al. <i>L'écriture inclusive, et si on s'y mettait ?</i> Le Robert.</span></li>
+      <li><span class="y">2018</span><span><span class="me">Pozniak, C.</span> <i>Le traitement des relatives dans les langues : une approche comparative et multifactorielle.</i> <span data-l="en">PhD dissertation</span><span data-l="fr">Thèse de doctorat</span>, Université Paris Diderot.</span></li>
+    </ol>
+  </section>
+</div>
+
+<!-- TALKS -->
+<div class="view" id="v-talks" hidden data-t-en="Talks" data-t-fr="Communications"
+  data-s-en="Invited talks and recent conference presentations" data-s-fr="Conférences invitées et communications récentes">
+  <section>
+    <h2><span data-l="en">Invited talks</span><span data-l="fr">Communications invitées</span></h2>
+    <ul class="entries">
+      <li><span class="y">2026</span><span>The social persona of French inclusive writing. <i>Connex</i>, CRCN, Université libre de Bruxelles.</span></li>
+      <li><span class="y">2026</span><span><span data-l="en">Invited course, “Applying psycholinguistic methods to linguistics”,</span><span data-l="fr">Cours invité, « Applying psycholinguistic methods to linguistics »,</span> <span data-l="en">CNRS thematic school</span><span data-l="fr">École thématique CNRS</span> ExQuaCCo, Fréjus.</span></li>
+      <li><span class="y">2025</span><span><span data-l="en">“Qui se cache derrière étudiant·es ?”</span><span data-l="fr">« Qui se cache derrière étudiant·es ? »</span> <span data-l="en">Debate on inclusive communication in higher education</span><span data-l="fr">Conférence-débat sur la communication inclusive dans l'enseignement supérieur</span>, ARES, Bruxelles.</span></li>
+      <li><span class="y">2024</span><span><span data-l="en">Invited course, “Régression linéaire et modèles mixtes”,</span><span data-l="fr">Cours invité, « Régression linéaire et modèles mixtes »,</span> <span data-l="en">Summer school</span><span data-l="fr">École d'été</span> STAL2, RéAL2, Université Paul-Valéry Montpellier 3.</span></li>
+      <li><span class="y">2024</span><span>The aboutness hypothesis: A new way to explain relative clause processing. <i>Linglunch</i>, LLF, Université Paris Cité.</span></li>
+      <li><span class="y">2023</span><span><i>Language and Gender Workshop</i>, Porquerolles.</span></li>
+      <li><span class="y">2021</span><span><span data-l="en">With</span><span data-l="fr">Avec</span> H. Burnett. Failures of Gricean reasoning and the role of stereotypes in the production of gender marking in French. <i>XPrag Wine</i> (online).</span></li>
+      <li><span class="y">2020</span><span><span data-l="en">With</span><span data-l="fr">Avec</span> H. Burnett. Political dimensions of “écriture inclusive” in Parisian universities. <i>Venice Research Webinar in Linguistics</i>, Ca' Foscari.</span></li>
+      <li><span class="y">2017</span><span><span data-l="en">With</span><span data-l="fr">Avec</span> B. Hemforth. It's all about the head. Workshop in honour of Janet Dean Fodor, Université Paris Diderot.</span></li>
+      <li><span class="y">2017</span><span><span data-l="en">With</span><span data-l="fr">Avec</span> J. Huang &amp; B. Hemforth. Relative clause processing, structural and linear distance matter. <i>Recent Trends in Linguistic Research</i>, Frankfurt.</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2><span data-l="en">Recent peer-reviewed presentations</span><span data-l="fr">Communications récentes à comité de lecture</span></h2>
+    <ul class="entries">
+      <li><span class="y">2026</span><span>Richy, C., Thiberge, G., &amp; <span class="me">Pozniak, C.</span> NWAV 54 (Montréal) and ExAPP 2026 (Groningen).</span></li>
+      <li><span class="y">2025</span><span>Michel, S., <span class="me">Pozniak, C.</span>, &amp; Colonna, S. The mod-dot in gender-inclusive French: A reading study. AMLaP 31, Prague.</span></li>
+      <li><span class="y">2025</span><span>Corbeau, E., <span class="me">Pozniak, C.</span>, &amp; Burnett, H. Experimental approach to advice-giving in French L1 and Japanese L1. AMLaP 31, Prague.</span></li>
+      <li><span class="y">2025</span><span>Thiberge, G., Badeau, D., &amp; <span class="me">Pozniak, C.</span> Subject inversion in French relative clauses: Experimental results and region-based influences. SLE 2025, Bordeaux.</span></li>
+      <li><span class="y">2025</span><span>Badeau, D., <span class="me">Pozniak, C.</span>, &amp; Thiberge, G. Inversion du sujet dans les relatives et rapport régionalisé à la norme. <i>Nouveaux regards sur la norme</i>, Fribourg.</span></li>
+      <li><span class="y">2024</span><span>Thiberge, G., Da Silva, L., &amp; <span class="me">Pozniak, C.</span> Order! Where you put your subject tells more about you than you think. AMLaP 30, Edinburgh.</span></li>
+      <li><span class="y">2024</span><span>Godart-Wendling, B., <span class="me">Pozniak, C.</span>, Beyssade, C., &amp; Roussarie, L. Retrieval of implicit contents. RALFE 2024, Bayonne.</span></li>
+      <li><span class="y">2023</span><span><span class="me">Pozniak, C.</span>, &amp; Hemforth, B. The aboutness hypothesis: A new way to explain relative clause processing. AMLaP 29, San Sebastián.</span></li>
+    </ul>
+  </section>
+</div>
+
+<!-- TEACHING -->
+<div class="view" id="v-teaching" hidden data-t-en="Teaching &amp; supervision" data-t-fr="Enseignement &amp; encadrement"
+  data-s-en="Courses and supervision, from first year to PhD" data-s-fr="Cours et encadrement, de la L1 au doctorat">
+  <section>
+    <h2><span data-l="en">PhD students</span><span data-l="fr">Doctorat</span></h2>
+    <ul class="courses">
+      <li><span class="t">Emma Corbeau</span><span class="m"><span data-l="en">PhD co-supervised with Heather Burnett, Université Paris Cité (LLF), since 2024</span><span data-l="fr">Thèse co-encadrée avec Heather Burnett, Université Paris Cité (LLF), depuis 2024</span></span>
+        <span data-l="en">Advice-giving as a speech act, an experimental French–Japanese comparison.</span><span data-l="fr">L'acte de parole du conseil, approche expérimentale français–japonais.</span></li>
+      <li><span class="t"><span data-l="en">PhD monitoring committees</span><span data-l="fr">Comités de suivi de thèse</span></span><span class="m">Paris 8, Université Paris Cité, Lyon</span>
+        <span data-l="en">I sit on five committees.</span><span data-l="fr">Je fais partie de cinq comités.</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2><span data-l="en">Master students</span><span data-l="fr">Master</span></h2>
+    <h3 style="margin:0">Université Paris 8</h3>
+    <ul class="courses">
+      <li><span class="t"><span data-l="en">Experimental linguistics</span><span data-l="fr">Linguistique expérimentale</span></span><span class="m">M1 LAVS, 2022–2026</span></li>
+      <li><span class="t"><span data-l="en">Linguistics seminar</span><span data-l="fr">Séminaire de linguistique</span></span><span class="m">M1 LAVS, 2022–2023</span></li>
+      <li><span class="t"><span data-l="en">Syntax</span><span data-l="fr">Syntaxe</span></span><span class="m">Master, 2026–2027</span></li>
+      <li><span class="t"><span data-l="en">Master's theses supervised</span><span data-l="fr">Mémoires de master encadrés</span></span><span class="m">2022–</span>
+        <span data-l="en">X. Hu (gender cues in the French and Mandarin active/passive alternation), X. Guo (relative clauses in French and Mandarin), J. Maheu (priming between language and mathematics), F. Bwikizo (left dislocation in L3 French), G. Lu (teaching French past tenses in Chinese contexts).</span><span data-l="fr">X. Hu (indices de genre dans l'alternance actif/passif en français et en mandarin), X. Guo (relatives en français et en mandarin), J. Maheu (amorçage entre langage et mathématiques), F. Bwikizo (dislocation à gauche en français L3), G. Lu (enseignement des temps du passé en contexte chinois).</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2><span data-l="en">Bachelor students</span><span data-l="fr">Licence</span></h2>
+    <h3 style="margin:0">Université Paris 8</h3>
+    <ul class="courses">
+      <li><span class="t"><span data-l="en">Psycholinguistics</span><span data-l="fr">Psycholinguistique</span></span><span class="m">L2, 2022–</span></li>
+      <li><span class="t"><span data-l="en">Language production</span><span data-l="fr">Production du langage</span></span><span class="m">L2, 2022–</span></li>
+      <li><span class="t"><span data-l="en">Language and the brain</span><span data-l="fr">Langage et cerveau</span></span><span class="m">L2, 2022–2025</span></li>
+      <li><span class="t"><span data-l="en">Sociolinguistics</span><span data-l="fr">Sociolinguistique</span></span><span class="m">L3, 2022–</span></li>
+      <li><span class="t"><span data-l="en">Experimental methodology</span><span data-l="fr">Méthodologie expérimentale</span></span><span class="m">L3, 2025–2026</span></li>
+      <li><span class="t"><span data-l="en">French grammar for competitive exams</span><span data-l="fr">Français pour concours</span></span><span class="m">L2, 2023–2025</span></li>
+      <li><span class="t"><span data-l="en">Linguistic units</span><span data-l="fr">Unités linguistiques</span></span><span class="m">2026–2027</span></li>
+      <li><span class="t">Challenging linguistic theories</span><span class="m">2026–2027</span></li>
+      <li><span class="t"><span data-l="en">Academic skills (M2E) and disciplinary methodology</span><span data-l="fr">M2E et méthodologie disciplinaire</span></span><span class="m">L1, 2022–, <span data-l="en">coordinator</span><span data-l="fr">coordination</span></span></li>
+    </ul>
+    <h3 style="margin:0">Université Paris Diderot (2014–2017)</h3>
+    <ul class="courses">
+      <li><span class="t"><span data-l="en">Introduction to linguistics</span><span data-l="fr">Introduction à la linguistique</span></span><span class="m">L1</span></li>
+      <li><span class="t"><span data-l="en">French grammar and French as a foreign language</span><span data-l="fr">Grammaire française et FLE</span></span><span class="m">L2–M1</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2><span data-l="en">Workshops and training</span><span data-l="fr">Ateliers et formations</span></h2>
+    <ul class="courses">
+      <li><span class="t">Applying psycholinguistic methods to linguistics</span><span class="m"><span data-l="en">CNRS thematic school</span><span data-l="fr">École thématique CNRS</span> ExQuaCCo, Fréjus, 2026</span></li>
+      <li><span class="t">Régression linéaire et modèles mixtes</span><span class="m"><span data-l="en">Summer school</span><span data-l="fr">École d'été</span> STAL2, Montpellier, 2024</span></li>
+      <li><span class="t"><span data-l="en">Eye-tracking training</span><span data-l="fr">Formation à l'oculométrie</span></span><span class="m">LLF, Université Paris Cité, 2020, 2024</span></li>
+    </ul>
+  </section>
+  <section>
+    <h2><span data-l="en">Responsibilities</span><span data-l="fr">Responsabilités</span></h2>
+    <ul class="entries">
+      <li><span class="y">2025–</span><span data-l="en">Co-head of the Licence in Language Sciences (with Charlotte Hauser), including the new LMD5 curriculum</span><span data-l="fr">Co-responsable de la Licence Sciences du langage (avec Charlotte Hauser), dont la mise en place de la maquette LMD5</span></li>
+      <li><span class="y">2025–</span><span data-l="en">Head of the psycholinguistics specialisation of the Licence</span><span data-l="fr">Responsable de la spécialisation psycholinguistique de la licence</span></li>
+      <li><span class="y">2023–</span><span data-l="en">Founder of the Genre et langage seminar (SFL)</span><span data-l="fr">Création du séminaire Genre et langage (SFL)</span></li>
+      <li><span class="y">2025</span><span data-l="en">Organising committee, CSSP 2025 (Colloque de Syntaxe et Sémantique à Paris)</span><span data-l="fr">Comité d'organisation de CSSP 2025 (Colloque de Syntaxe et Sémantique à Paris)</span></li>
+      <li><span class="y">2021</span><span data-l="en">Organising committee, AMLaP 2021, Paris</span><span data-l="fr">Comité d'organisation d'AMLaP 2021, Paris</span></li>
+    </ul>
+    <p class="note" data-l="en">Elected member of the SFL lab council and the UFR council.</p>
+    <p class="note" data-l="fr">Mandats électifs au conseil de laboratoire de SFL et au conseil de l'UFR.</p>
+  </section>
+  <section>
+    <h2><span data-l="en">Outreach</span><span data-l="fr">Diffusion</span></h2>
+    <p data-l="en">Interviews for the Bondy Blog and the Labex EFL podcast <i>Vox</i> (2023); “C'est quoi ta thèse ?” video (Labex EFL, 2018); eye-tracking demonstrations at the Fête de la Science (2016, 2017).</p>
+    <p data-l="fr">Entretiens pour le Bondy Blog et le podcast <i>Vox</i> du Labex EFL (2023) ; vidéo « C'est quoi ta thèse ? » (Labex EFL, 2018) ; démonstrations d'oculométrie à la Fête de la Science (2016, 2017).</p>
+  </section>
+</div>
+
+<!-- CV -->
+<div class="view" id="v-cv" hidden data-t-en="CV" data-t-fr="Parcours"
+  data-s-en="Positions, education and languages" data-s-fr="Postes, formation et langues">
+  <section>
+    <ul class="entries">
+      <li><span class="y">2020–</span><span data-l="en">Associate Professor, Université Paris 8, SFL (UMR 7023)</span><span data-l="fr">MCF, Université Paris 8, SFL (UMR 7023)</span></li>
+      <li><span class="y">2019–2020</span><span data-l="en">Postdoc, LLF, Université de Paris (PI Heather Burnett), on grammatical gender in changing societies</span><span data-l="fr">Postdoctorat, LLF, Université de Paris (resp. Heather Burnett), sur le genre grammatical dans des sociétés en mutation</span></li>
+      <li><span class="y">2018–2019</span><span data-l="en">Postdoc, University of Stirling (PI Kumiko Fukumura), on reference production in French, English and Italian</span><span data-l="fr">Postdoctorat, University of Stirling (resp. Kumiko Fukumura), sur la production de la référence en français, anglais et italien</span></li>
+      <li><span class="y">2018</span><span data-l="en">PhD in Language Sciences, Université Paris Diderot (LLF), supervised by Barbara Hemforth</span><span data-l="fr">Doctorat en sciences du langage, Université Paris Diderot (LLF), sous la direction de Barbara Hemforth</span></li>
+      <li><span class="y">2016</span><span data-l="en">Research stay, University of Glasgow (with Christoph Scheepers)</span><span data-l="fr">Séjour de recherche, University of Glasgow (avec Christoph Scheepers)</span></li>
+      <li><span class="y">2014</span><span data-l="en">MA in Language Sciences (French as a foreign language), Université Paris Diderot</span><span data-l="fr">Master en sciences du langage (FLE), Université Paris Diderot</span></li>
+    </ul>
+    <p class="note" data-l="en">Languages: French, English, German; basic Mandarin and Japanese.</p>
+    <p class="note" data-l="fr">Langues : français, anglais, allemand ; notions de mandarin et de japonais.</p>
+  </section>
+</div>
+
+</main>
+
+<footer><div class="in gut"><span data-l="en">Last updated October 2026</span><span data-l="fr">Mis à jour en octobre 2026</span></div></footer>
+
+<script>
+(function(){
+  var lang = 'en', current = 'home';
+  var views = ['home','research','publications','talks','teaching','cv'];
+  var title = document.getElementById('page-title');
+
+  function paint(){
+    var v = document.getElementById('v-' + current);
+    title.textContent = v.dataset['t' + (lang === 'fr' ? 'Fr' : 'En')];
+  }
+  function show(name, scroll){
+    if (views.indexOf(name) < 0) name = 'home';
+    current = name;
+    views.forEach(function(n){ document.getElementById('v-' + n).hidden = n !== name; });
+    document.querySelectorAll('.tabs a').forEach(function(a){
+      if (a.dataset.v === name) a.setAttribute('aria-current','page'); else a.removeAttribute('aria-current');
+    });
+    paint();
+    if (scroll) window.scrollTo(0,0);
+  }
+  document.addEventListener('click', function(e){
+    var a = e.target.closest('a[href^="#"]');
+    if (!a) return;
+    var n = a.getAttribute('href').slice(1);
+    if (views.indexOf(n) >= 0){ e.preventDefault(); show(n, true); try{ history.replaceState(null,'','#'+n); }catch(x){} }
+  });
+  window.addEventListener('hashchange', function(){ show(location.hash.slice(1), true); });
+  show(location.hash.slice(1), false);
+
+  // fixations: second fixation on the same word is a regression
+  document.querySelectorAll('.w[data-f]').forEach(function(w){
+    var fx = w.dataset.f.split(',');
+    fx.forEach(function(f, i){
+      var p = f.split(':'), o = +p[0], ms = +p[1];
+      var d = document.createElement('span');
+      d.className = 'fx' + (i ? ' reg' : '');
+      d.style.setProperty('--s', ((ms / 318) * 1.6).toFixed(2) + 'em');
+      d.style.left = (fx.length > 1 ? (i ? 72 : 30) : 50) + '%';
+      d.innerHTML = '<b>' + o + '</b>';
+      d.title = ms + ' ms';
+      w.appendChild(d);
+    });
+  });
+
+  // e-mail assembled in the browser only
+  var eml = document.getElementById('eml');
+  var rev = function(s){ return s.split('').reverse().join(''); };
+  var address = rev(eml.dataset.u) + '@' + rev(eml.dataset.d);
+  eml.textContent = address;
+
+  // language (English by default)
+  var en = document.getElementById('lang-en'), fr = document.getElementById('lang-fr');
+  function set(l){
+    lang = l;
+    document.body.classList.toggle('en', l === 'en');
+    document.documentElement.lang = l;
+    en.setAttribute('aria-pressed', l === 'en'); fr.setAttribute('aria-pressed', l === 'fr');
+    paint();
+    try { localStorage.setItem('site-lang', l); } catch(e){}
+  }
+  en.onclick = function(){ set('en'); }; fr.onclick = function(){ set('fr'); };
+  var saved = null; try { saved = localStorage.getItem('site-lang'); } catch(e){}
+  set(saved === 'fr' ? 'fr' : 'en');
+
+  // copy
+  var c = document.getElementById('copy-mail');
+  c.addEventListener('click', function(){
+    var done = function(){ c.querySelectorAll('span').forEach(function(s){ s.textContent = s.dataset.l === 'fr' ? 'copié' : 'copied'; }); };
+    if (navigator.clipboard) navigator.clipboard.writeText(address).then(done).catch(function(){
+      var r = document.createRange(); r.selectNodeContents(eml); var sel = getSelection(); sel.removeAllRanges(); sel.addRange(r);
+    });
+  });
+})();
+</script>
+
+</body></html>
